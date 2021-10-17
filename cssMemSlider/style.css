@@ -1,19 +1,48 @@
 * {  
-
-}
-
-.container {
-    margin: auto;
-    max-width: 800px;
+    
 }
 
 .slider {
+    display: flex;
     margin: 25px;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: auto;
+
 }
 
+
+.slider-images {
+    flex: 100%;
+} 
+
+
+.descriptions {
+    flex: 50%;
+    justify-content: flex-start;
+}
+
+.labels {
+    flex: 50%;
+    justify-content: flex-end;
+    display: flex;
+}
+
+.labels label {
+    width: 20px;
+    height: 20px;
+    margin: 15px;
+    background-color: tomato;
+    color: tomato;
+    border-radius: 50%;
+}
+
+
 @media screen and (max-width:420px) {
-    .container {
+    .slider {
         max-width: 350px;
     }
 
 }
+
+
