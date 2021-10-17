@@ -8,41 +8,55 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main class="container">
-      <input class="slider-dot" type="radio" name="slider" title="slide1" checked="checked"/>
-      <input class="slider-dot" type="radio" name="slider" title="slide2"/>
-      <input class="slider-dot" type="radio" name="slider" title="slide3"/>
-      <input class="slider-dot" type="radio" name="slider" title="slide4"/>
+      <input class="slider-dot" type="radio" id="btn1" name="slider" title="slide1" checked="checked"/>
+      <input class="slider-dot" type="radio" id="btn2" name="slider" title="slide2"/>
+      <input class="slider-dot" type="radio" id="btn3" name="slider" title="slide3"/>
+      <input class="slider-dot" type="radio" id="btn4" name="slider" title="slide4"/>
 
       <div class="slider">
-          <div class="slider-inner">
-            <div class="slider-body">
-              <img class="slider-image" src="media/1.jpg" alt="">
-              <p class="slider_text">
-                Не забывай свою бабушку, анон
-              </p>
+          <div class="slider-images">
+            <div class="pic">
+              <img class="slider-image" src="media/1.jpg" id="img1" alt="">
             </div>
-            <div class="slider-body">
-              <img class="slider-image" src="media/2.jpg" alt="">
-              <p class="slider-text">
-                Это всегда хорошо
-              </p>
+            <div class="pic">
+              <img class="slider-image" src="media/2.jpg" id="img2" alt="">
             </div>
-            <div class="slider-body">
-              <img class="slider-image" src="media/3.jpg" alt="">
-              <p class="slider-text">
-                #бабушкинкулинар
-              </p>
+            <div class="pic">
+              <img class="slider-image" src="media/3.jpg" id="img3" alt="">
             </div>
-            <div class="slider-body">
-              <img class="slider-image" src="media/4.jpg" alt="">
-              <p class="slider-text">
-                Почему почти все мемы из подборки получились про старух?
-              </p>
+            <div class="pic">
+              <img class="slider-image" src="media/4.jpg" id="img4" alt="">
             </div>
           </div>
+          <div class="descriptions">
+            <p class="slider_text" id="desc1">
+              Не забывай свою бабушку, анон
+            </p>
+            <p class="slider-text" id="desc2">
+              Это всегда хорошо
+            </p>
+            <p class="slider-text" id="desc3">
+              #бабушкинкулинар
+            </p>
+            <p class="slider-text" id="desc4">
+              Почему почти все мемы из подборки получились про старух?
+            </p>
+          </div>
+          <div class="labels">
+            <label for="btn1">
+              <span class="dot"></span>
+            </label>
+            <label for="btn2">
+              <span class="dot"></span>
+            </label>
+            <label for="btn3">
+              <span class="dot"></span>
+            </label>
+            <label for="btn4">
+              <span class="dot"></span>
+            </label>
+          </div>
         </div>
-    </main>
 
 </body>
 </html>
