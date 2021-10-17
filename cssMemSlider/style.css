@@ -1,9 +1,4 @@
-* {  
-    
-}
-
 .slider {
-
     display: flex;
     margin: 25px;
     flex-wrap: wrap;
@@ -120,10 +115,23 @@ input[type='radio'] {
 
 
 
-@media screen and (max-width:420px) {
+@media screen and (min-width: 420px) and (max-width:768px) {
+    
     .slider {
-        max-width: 350px;
+        display: flex;
+        max-width: 380px;
+        height: 50%
     }
+
+    .slider-images {
+        height: 15rem;
+    }
+
+    .pic img {
+
+    }
+
+    
 
 }
 
