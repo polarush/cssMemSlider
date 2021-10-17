@@ -10,6 +10,8 @@
     max-width: 800px;
     margin: auto;
     overflow: hidden;
+
+
 }
 
 
@@ -18,11 +20,12 @@
     flex: 100%;
     width: 400%;
     flex-direction: row;
+
+
 } 
 
 .pic {
     width: 25%;
-    transition: all 0.6s ease-in-out;
 }
 
 
@@ -32,17 +35,16 @@
     width: 50%;
     flex: 50%;
     justify-content: flex-start;
-    transition: all 0.6s ease-in-out;
 }
 
 .description-container {
     width: 400%;
     display: flex;
     flex-shrink: 0;
+
 }
 
 .slider-text {
-    overflow: hidden;
     height: 100%;
     width: 25%;
 }   
@@ -58,6 +60,7 @@
 
 .labels label {
     width: 20px;
+    cursor: pointer;
     height: 20px;
     margin: 15px;
     background-color: tomato;
@@ -65,9 +68,56 @@
     border-radius: 50%;
 }
 
+
 input[type='radio'] {
-    visibility: hidden;
+     display: none;
 }
+
+
+#btn1:checked ~ .slider .slider-images  {
+  margin-left: 0px;
+  transition: all 0.6s ease-in-out;
+}
+#btn2:checked ~ .slider .slider-images  {
+  margin-left: -100%;
+  transition: all 0.6s ease-in-out;
+}
+
+#btn3:checked ~ .slider .slider-images 
+ {
+  margin-left: -200%;
+  transition: all 0.6s ease-in-out;
+
+}
+#btn4:checked ~ .slider .slider-images  {
+  margin-left: -300%;
+  transition: all 0.6s ease-in-out;
+
+}
+
+
+#btn1:checked ~ .slider .descriptions .description-container  {
+    margin-left: 0px;
+    transition: all 0.6s ease-in-out;
+  }
+#btn2:checked ~ .slider .descriptions .description-container  {
+    margin-left: -100%;
+    transition: all 0.6s ease-in-out;
+  }
+  
+#btn3:checked ~ .slider .descriptions .description-container 
+   {
+    margin-left: -200%;
+    transition: all 0.6s ease-in-out;
+  
+  }
+#btn4:checked ~ .slider .descriptions .description-container  {
+    margin-left: -300%;
+    transition: all 0.6s ease-in-out;
+  
+  }
+  
+
 
 
 @media screen and (max-width:420px) {
