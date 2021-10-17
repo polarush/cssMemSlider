@@ -1,3 +1,7 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .slider {
     display: flex;
     margin: 25px;
@@ -128,11 +132,23 @@ input[type='radio'] {
     }
 
     .pic img {
-
+        height: 100%;
     }
 
-    
+    .slider .slider-images {
+        flex: 100%;
+        order: 0;
+    }
+
+    .slider .labels {
+        flex: 100%;
+        order: 1;
+        justify-content: center;
+    }
+
+    .slider .descriptions {
+        flex: 100%;
+        order: 2;
+    }
 
 }
-
-
