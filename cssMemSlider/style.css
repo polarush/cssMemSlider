@@ -1,0 +1,180 @@
+html {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.slider {
+    display: flex;
+    margin: 25px;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: auto;
+    overflow: hidden;
+
+
+}
+
+
+.slider-images {
+    display: flex;
+    flex: 100%;
+    width: 400%;
+    flex-direction: row;
+
+
+} 
+
+.pic {
+    width: 25%;
+}
+
+
+
+.descriptions {
+    display: flex;
+    width: 50%;
+    flex: 50%;
+    justify-content: flex-start;
+}
+
+.description-container {
+    width: 400%;
+    display: flex;
+    flex-shrink: 0;
+
+}
+
+.slider-text {
+    height: 100%;
+    width: 25%;
+}   
+
+.labels {
+    width: 50%;
+    flex: 50%;
+    justify-content: flex-end;
+    display: flex;
+    background-color: #fff;
+    z-index: 1;
+    align-items: center;
+}
+
+
+.labels label {
+    width: 44px;
+    cursor: pointer;
+    height: 44px;
+    display: inline-block;
+    align-items: center;
+    display: flex;
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    background-color: tomato;
+    border-radius: 50%;
+    display: block;
+
+}
+
+
+input[type='radio'] {
+     display: none;
+}
+
+
+#btn1:checked ~ .slider .slider-images  {
+  margin-left: 0px;
+  transition: all 0.6s ease-in-out;
+}
+#btn2:checked ~ .slider .slider-images  {
+  margin-left: -100%;
+  transition: all 0.6s ease-in-out;
+}
+
+#btn3:checked ~ .slider .slider-images 
+ {
+  margin-left: -200%;
+  transition: all 0.6s ease-in-out;
+
+}
+#btn4:checked ~ .slider .slider-images  {
+  margin-left: -300%;
+  transition: all 0.6s ease-in-out;
+
+}
+
+
+#btn1:checked ~ .slider .descriptions .description-container  {
+    margin-left: 0px;
+    transition: all 0.6s ease-in-out;
+  }
+#btn2:checked ~ .slider .descriptions .description-container  {
+    margin-left: -100%;
+    transition: all 0.6s ease-in-out;
+  }
+  
+#btn3:checked ~ .slider .descriptions .description-container 
+   {
+    margin-left: -200%;
+    transition: all 0.6s ease-in-out;
+  
+  }
+#btn4:checked ~ .slider .descriptions .description-container  {
+    margin-left: -300%;
+    transition: all 0.6s ease-in-out;
+  
+  }
+
+.labels label:hover .dot{
+  background-color: rgb(255, 159, 142);
+  border-color: rgb(131, 83, 83) !important;
+}
+#btn1:checked ~ .slider .labels #dot1 .dot,
+#btn2:checked ~ .slider .labels #dot2 .dot,
+#btn3:checked ~ .slider .labels #dot3 .dot,
+#btn4:checked ~ .slider .labels #dot4 .dot{
+  border: 2px solid #000;
+  background: transparent;
+}
+
+.labels label:active .dot {
+  background-color: tomato;
+  border: 2px solid #000;
+}
+
+@media screen and (min-width: 420px) and (max-width:768px) {
+    
+    .slider {
+        display: flex;
+        max-width: 380px;
+        height: 50%
+    }
+
+    .slider-images {
+        height: 15rem;
+    }
+
+    .pic img {
+        height: 100%;
+    }
+
+    .slider .slider-images {
+        flex: 100%;
+        order: 0;
+    }
+
+    .slider .labels {
+        flex: 100%;
+        order: 1;
+        justify-content: center;
+    }
+
+    .slider .descriptions {
+        flex: 100%;
+        order: 2;
+    }
+
+}
+
+
